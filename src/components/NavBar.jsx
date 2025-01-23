@@ -1,30 +1,25 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 
 function NavBar() {
     
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
     return (
-        <nav className="nav-bar">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)}>Menu</button>
-            {isMenuOpen && (
+        <nav>
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/">About</Link>
                     </li>
                     <li>
                         <Link to="/projects">Projects</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/contact">Contact</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/resume">Resume</Link>
                     </li>
                     
                 </ul>
-            )}
         </nav>
     );
 }
