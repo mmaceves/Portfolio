@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
@@ -15,6 +15,9 @@ function NavBar() {
                     </li>
                     <li>
                         <Link to="/projects">Projects</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">About</Link>
                     </li>
                     <li>
                         <Link to="/contact">Contact</Link>
